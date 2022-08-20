@@ -1,0 +1,15 @@
+.postTools {
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.postTools :hover {
+  background-color: whitesmoke;
+}
+
+.postTools > h4 {
+  margin-left: 10px;
+}

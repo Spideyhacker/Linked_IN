@@ -1,0 +1,27 @@
+
+  
+  const sendPost = async (e) => {
+    e.preventDefault(); 
+    
+    const userid = v4();
+
+    console.log(userid);
+
+    var userId = userid;
+    var name = "Shashwat Tiwari";
+    var description = "Online";
+    var message = { input };
+    var imageURL =
+      "https://lh3.googleusercontent.com/a-/AOh14GjRxaIJ6gYmxhJ2g6STElC4WgtjtwmeU-Z1vwoL=s96-c";
+
+    console.log("sendPost");
+
+    const docRef = doc(db, "posts", userId);
+    const posted = {
+      username: name,
+      status: description,
+      imageURL: imageURL,
+      message: message,
+      lastUpdated: serverTimestamp()
+    };
+    setDoc(docRef, posted, { merge: true });}
